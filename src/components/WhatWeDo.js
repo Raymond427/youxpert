@@ -11,7 +11,7 @@ import Service from './Service';
 class WhatWeDo extends Component {
    render(){
       const services = this._getServices();
-      
+
       return(
          <div className="what-we-do">
             <h1>What We Do</h1>

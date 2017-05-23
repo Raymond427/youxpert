@@ -1,26 +1,35 @@
 import React, { Component } from 'react';
+import code from '../images/code.png';
+import consulting from '../images/consulting.jpeg';
+import userTesting from '../images/user-testing.jpeg';
+import Ux from './Ux';
 import '../styles/UserX.css';
 
 class UserX extends Component {
    render() {
+      const userx = this._getUserX();
+
       return(
          <div className="UserX">
             <h1>WHAT IS USER EXPERIENCE DESIGN?</h1>
             <h3>Every decision we make when building your product is based on the preferences of your target audience</h3>
-            <div className="UserX-step1">
-               <h5>We Meet With You</h5>
-               <p>We sit down with you and learn about your current business and your vision for your future product</p>
-            </div>
-            <div className="UserX-step2">
-               <h5>We Interview Your Audience</h5>
-               <p>We interview the audience you are targeting and learn how to make their dream product directly from them</p>
-            </div>
-            <div className="UserX-step3">
-               <h5>We Build Your Product</h5>
-               <p>Don't Know How To Build Our Designs? Relax, We Got It!</p>
-            </div>
+            {userx}
          </div>
       );
+   }
+
+   _getUserX(){
+      const userXListJSON = [
+         { id: 1, title: "We Meet With You", description: "We sit down with you and learn about your current business and your vision for your future product", background: consulting },
+         { id: 2, title: "We Interview Your Audience", description: "We interview the audience you are targeting and learn how to make their dream product directly from them", background: userTesting },
+         { id: 3, title: "We Build Your Product", description: "Don't Know How To Build Our Designs? Relax, We Got It!", background: code }
+      ];
+
+      return userXListJSON.map((userX) => {
+         return(
+            <Ux title={userX.title} description={userX.description} background={userX.background} key={userX.id} />
+         );
+      });
    }
 }
 
