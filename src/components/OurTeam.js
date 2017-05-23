@@ -1,42 +1,59 @@
 import React, { Component } from 'react';
+import Skill from './Skill';
 import TeamMate from './TeamMate.js';
+import cert from '../images/cert.png';
+import graduate from '../images/graduate.png';
+import honor from '../images/honor.png';
+import dreupic from '../images/dreu.png';
+import mikepic from '../images/mike.png';
+import raypic from '../images/raymond.jpg';
+import jonpic from '../images/jonathan.png';
 
 class OurTeam extends Component {
    render(){
+      const skills = this._getSkills();
+      const teamMates = this._getTeamMates();
+
       return(
          <div className="our-team">
             <h1>Our Team</h1>
             <div className="skills">
-               <div className="skill">
-                  <h4>Proficient Background</h4>
-                  <img alt=""/>
-                  <p>Systems Engineering</p>
-                  <p>Computer Science</p>
-                  <p>Masters of Business Administration</p>
-               </div>
-               <div className="skill">
-                  <h4>Quality Certifications</h4>
-                  <img alt=""/>
-                  <p>Six Sigma Green Belts from <span>Life Leaders</span></p>
-                  <p>Programming Certifications from <span>MIT and UC Berkley</span></p>
-                  <p>P.D.C.A. Problem Solving from <span>Lockheed Martin</span></p>
-               </div>
-               <div className="skill">
-                  <h4>Proven Results</h4>
-                  <img alt=""/>
-                  <p>Increases in client customer acquisition</p>
-                  <p>Increases in client revenue</p>
-                  <p>99% Overall satisfaction rating from clients</p>
-               </div>
+               {skills}
             </div>
             <div className="team">
-               <TeamMate img="https://static.wixstatic.com/media/ccd5d1_3c2ba25574c44a7cabc3d74a71ea59c6~mv2.png/v1/fill/w_197,h_197,al_c,usm_0.66_1.00_0.01/ccd5d1_3c2ba25574c44a7cabc3d74a71ea59c6~mv2.png" name="Dreu Dixon" title="Cheif Executive Officer" />
-               <TeamMate img="https://static.wixstatic.com/media/ccd5d1_6a13fd33584b41ab9104dc24e53e2cdc~mv2.png/v1/fill/w_197,h_197,al_c,lg_1/ccd5d1_6a13fd33584b41ab9104dc24e53e2cdc~mv2.png" name="Mike Caba" title="Cheif Innovation Officer" />
-               <TeamMate img="https://static.wixstatic.com/media/ccd5d1_7c8a6151f6ec4666b1a76adefb3b5e60~mv2_d_2335_2337_s_2.jpg/v1/fill/w_197,h_197,al_c,q_80,usm_0.66_1.00_0.01/ccd5d1_7c8a6151f6ec4666b1a76adefb3b5e60~mv2_d_2335_2337_s_2.webp" name="Raymond Ferrell" title="Cheif Technology Officer" />
-               <TeamMate img="https://static.wixstatic.com/media/ccd5d1_806e759379014198a3c4dd77595e8dee~mv2.jpg/v1/crop/x_0,y_59,w_725,h_724/fill/w_197,h_197,al_c,q_80,usm_0.66_1.00_0.01/ccd5d1_806e759379014198a3c4dd77595e8dee~mv2.webp" name="Johnathan Hazeley" title="Cheif Fianancial Officer" />
+               {teamMates}
             </div>
          </div>
       );
+   }
+
+   _getSkills(){
+      const skillsListJSON = [
+         { id: 1, name: "Proficient Background", image: graduate, description: ["Systems Engineering", "Computer Science", "Masters of Business Administration"] },
+         { id: 2, name: "Quality Certifications", image: cert, description: ["Six Sigma Green Belts from Life Leaders", "Programming Certifications from MIT and UC Berkley", "P.D.C.A. Problem Solving from Lockheed Martin"] },
+         { id: 3, name: "Proven Results", image: honor, description: ["Increases in client customer acquisition", "Increases in client revenue", "99% Overall satisfaction rating from clients"] }
+      ];
+
+      return skillsListJSON.map((skill) => {
+         return(
+            <Skill name={skill.name} image={skill.image} description={skill.description} key={skill.id} />
+         );
+      });
+   }
+
+   _getTeamMates(){
+      const teamMateListJSON = [
+         { id: 1, image: dreupic, name: "Dreu Dixon", title: "Cheif Executive Officer", description: "" },
+         { id: 2, image: mikepic, name: "Mike Caba", title: "Cheif Innovation Officer", description: "" },
+         { id: 3, image: raypic, name: "Raymond Ferrell", title: "Cheif Technology Officer", description: "" },
+         { id: 4, image: jonpic, name: "Johnathan Hazeley", title: "Cheif Fianancial Officer", description: "" }
+      ];
+
+      return teamMateListJSON.map((teamMate) => {
+         return(
+            <TeamMate image={teamMate.image} name={teamMate.name} title={teamMate.title} key={teamMate.id} />
+         );
+      });
    }
 }
 
