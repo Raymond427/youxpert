@@ -13,7 +13,7 @@ import Footer from './Footer';
 class App extends Component {
    constructor(){
       super();
-      this.state = { currentPage: <UserX/> };
+      this.state = { currentPage: <ContactUs/> };
    }
 
    render() {
