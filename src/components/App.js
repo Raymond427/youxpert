@@ -12,7 +12,7 @@ import Footer from './Footer';
 class App extends Component {
    constructor(){
       super();
-      this.state = { currentPage: <Home/> };
+      this.state = { currentPage: <Home renderContactUs={this._setPage.bind(this)}/> };
    }
 
    render() {
@@ -25,8 +25,20 @@ class App extends Component {
       );
    }
 
-   _setPage(component) {
-      this.setState({ currentPage: component });
+   _setPage(componentName) {
+      if (componentName === "Home") {
+         this.setState({ currentPage: <Home renderContactUs={this._setPage.bind(this)}/> });
+      } else if (componentName === "UserX") {
+         this.setState({ currentPage: <UserX/> });
+      } else if (componentName === "WhatWeDo") {
+         this.setState({ currentPage: <WhatWeDo/> });
+      } else if (componentName === "OurTeam") {
+         this.setState({ currentPage: <OurTeam/> });
+      } else if (componentName === "OurWork") {
+         this.setState({ currentPage: <OurWork/> });
+      } else if (componentName === "ContactUs") {
+         this.setState({ currentPage: <ContactUs/> });
+      }
    }
 }
 
