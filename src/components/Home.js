@@ -5,9 +5,9 @@ class Home extends Component {
    render() {
       return (
          <div className="Home">
-            <h1>WE EMPOWER VISIONARIES WITH COMPELLING USER EXPERIENCES</h1>
+            <h1>We empower visionaries with compelling user experiences</h1>
             <button className="contact-us--button" onClick={() => this._renderContactUs()}>
-               CONTACT US
+               Contact us
             </button>
          </div>
       );

@@ -14,7 +14,7 @@ class WhatWeDo extends Component {
 
       return(
          <div className="what-we-do">
-            <h1>What We Do</h1>
+            <h1>What we do</h1>
             {services}
          </div>
       );

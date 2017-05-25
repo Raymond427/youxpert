@@ -4,7 +4,7 @@ class OurWork extends Component {
    render(){
       return(
          <div className="our-work">
-            <h1>Our Work</h1>
+            <h1>Our work</h1>
          </div>
       );
    }

@@ -10,8 +10,8 @@ class ContactUs extends Component {
       return(
          <div className="contact-us">
             <div className="call-us">
-               <h2>Call Us Now</h2>
-               <h4>(980) 349-8479</h4>
+               <h2>Call us now</h2>
+               <h2>(980) 349-8479</h2>
             </div>
             {this._formState()}
          </div>
@@ -22,10 +22,10 @@ class ContactUs extends Component {
       if (this.state.entries) {
          return(
             <div className="entry-received">
-               <h3>Thank you for your message {this.state.entries.name}!</h3>
-               <h3>We will get back to you shortly</h3>
+               <h2>Thank you for your message {this.state.entries.name}!</h2>
+               <h2>We will get back to you shortly</h2>
                <button onClick={() => this._resetForm()}>
-                  Submit Another Form
+                  Submit another form
                </button>
             </div>
          );
@@ -33,7 +33,7 @@ class ContactUs extends Component {
       else {
          return(
             <div className="message-us">
-               <h2>Send Us A Message</h2>
+               <h2>Send us a message</h2>
                <ContactUsForm addEntry={this._addEntry.bind(this)}/>
             </div>
          );

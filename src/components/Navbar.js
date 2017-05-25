@@ -10,32 +10,32 @@ class Navbar extends Component {
             <ul className="Navbar-links">
                <li>
                   <a href="#" onClick={() => this._changeCurrentPage("Home")}>
-                     HOME
+                     Home
                   </a>
                </li>
                <li>
                   <a href="#" onClick={() => this._changeCurrentPage("UserX")}>
-                     USER EXPERIENCE
+                     User experience
                   </a>
                </li>
                <li>
                   <a href="#" onClick={() => this._changeCurrentPage("WhatWeDo")}>
-                     WHAT WE DO
+                     What we do
                   </a>
                </li>
                <li>
                   <a href="#" onClick={() => this._changeCurrentPage("OurTeam")}>
-                     OUR TEAM
+                     Our team
                   </a>
                </li>
                <li>
                   <a href="#" onClick={() => this._changeCurrentPage("OurWork")}>
-                     OUR WORK
+                     Our work
                   </a>
                </li>
                <li>
                   <a href="#" onClick={() => this._changeCurrentPage("ContactUs")}>
-                     CONTACT US
+                     Contact us
                   </a>
                </li>
             </ul>

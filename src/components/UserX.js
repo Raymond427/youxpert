@@ -11,8 +11,8 @@ class UserX extends Component {
 
       return(
          <div className="UserX">
-            <h1>WHAT IS USER EXPERIENCE DESIGN?</h1>
-            <h3>Every decision we make when building your product is based on the preferences of your target audience</h3>
+            <h1>What is user experience design?</h1>
+            <h2>Every decision we make when building your product is based on the preferences of your target audience</h2>
             {userx}
          </div>
       );

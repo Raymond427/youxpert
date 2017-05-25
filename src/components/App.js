@@ -17,9 +17,11 @@ class App extends Component {
 
    render() {
       return (
-         <div className="App">
+         <div className="app">
             <Navbar setCurrentPage={this._setPage.bind(this)}/>
-            {this.state.currentPage}
+            <div className="page">
+               {this.state.currentPage}
+            </div>
             <Footer/>
          </div>
       );

@@ -16,7 +16,7 @@ class OurTeam extends Component {
 
       return(
          <div className="our-team">
-            <h1>Our Team</h1>
+            <h1>Our team</h1>
             <div className="skills">
                {skills}
             </div>
