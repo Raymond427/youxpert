@@ -37,7 +37,7 @@ class App extends Component {
       } else if (componentName === "OurTeam") {
          this.setState({ currentPage: <OurTeam/> });
       } else if (componentName === "OurWork") {
-         this.setState({ currentPage: <OurWork/> });
+         this.setState({ currentPage: <OurWork renderContactUs={this._setPage.bind(this)}/> });
       } else if (componentName === "ContactUs") {
          this.setState({ currentPage: <ContactUs/> });
       }
