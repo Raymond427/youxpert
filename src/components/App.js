@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from '../images/logo.png';
 import '../styles/App.css';
 import Navbar from './Navbar';
 import Home from './Home';
@@ -13,7 +12,7 @@ import Footer from './Footer';
 class App extends Component {
    constructor(){
       super();
-      this.state = { currentPage: <ContactUs/> };
+      this.state = { currentPage: <Home/> };
    }
 
    render() {

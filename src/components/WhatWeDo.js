@@ -22,17 +22,17 @@ class WhatWeDo extends Component {
 
    _getServices(){
       const servicesListJSON = [
-         { image: webDesign, name: "Web Design", description: "We can create your website's visuals and prepare them for development" },
-         { image: development, name: "Web Development", description: "Our engineers can turn your design into fully functional software" },
-         { image: design, name: "Logo Design", description: "We can create your company's  flagship marketing tool" },
-         { image: userResearch, name: "User Research", description: "Want to know your customer's opinion on a product? We'll get it for you" },
-         { image: searchRank, name: "Search Engine Optimization", description: "Boost your rank on Google, Yahoo and Bing search results" },
-         { image: analytics, name: "Web Analytics", description: "Learn who visits your site, how long they stay, and what they use it for most" }
+         { id: 1, image: webDesign, name: "Web Design", description: "We can create your website's visuals and prepare them for development" },
+         { id: 2, image: development, name: "Web Development", description: "Our engineers can turn your design into fully functional software" },
+         { id: 3, image: design, name: "Logo Design", description: "We can create your company's  flagship marketing tool" },
+         { id: 4, image: userResearch, name: "User Research", description: "Want to know your customer's opinion on a product? We'll get it for you" },
+         { id: 5, image: searchRank, name: "Search Engine Optimization", description: "Boost your rank on Google, Yahoo and Bing search results" },
+         { id: 6, image: analytics, name: "Web Analytics", description: "Learn who visits your site, how long they stay, and what they use it for most" }
       ];
 
       return servicesListJSON.map((service) => {
          return(
-            <Service img={service.image} name={service.name} description={service.description}/>
+            <Service key={service.id} img={service.image} name={service.name} description={service.description}/>
          );
       });
    }

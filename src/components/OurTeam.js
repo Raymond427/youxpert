@@ -43,15 +43,20 @@ class OurTeam extends Component {
 
    _getTeamMates(){
       const teamMateListJSON = [
-         { id: 1, image: dreupic, name: "Dreu Dixon", title: "Cheif Executive Officer", description: "" },
-         { id: 2, image: mikepic, name: "Mike Caba", title: "Cheif Innovation Officer", description: "" },
-         { id: 3, image: raypic, name: "Raymond Ferrell", title: "Cheif Technology Officer", description: "" },
-         { id: 4, image: jonpic, name: "Johnathan Hazeley", title: "Cheif Fianancial Officer", description: "" }
+         { id: 1, image: dreupic, name: "Dreu Dixon", title: "Chief Executive Officer" },
+         { id: 2, image: mikepic, name: "Mike Caba", title: "Chief Innovation Officer" },
+         { id: 3, image: raypic, name: "Raymond Ferrell", title: "Chief Technology Officer" },
+         { id: 4, image: jonpic, name: "Johnathan Hazeley", title: "Chief Fianancial Officer" }
       ];
 
       return teamMateListJSON.map((teamMate) => {
          return(
-            <TeamMate image={teamMate.image} name={teamMate.name} title={teamMate.title} key={teamMate.id} />
+            <TeamMate
+                     image={teamMate.image}
+                     name={teamMate.name}
+                     title={teamMate.title}
+                     key={teamMate.id}
+                     id={teamMate.id} />
          );
       });
    }
