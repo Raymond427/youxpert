@@ -14,7 +14,9 @@ class TeamMate extends Component {
                                        image={this.props.image}
                                        title={this.props.title}
                                        key={this.props.id}
-                                       id={this.props.id} />;
+                                       id={this.props.id}
+                                       unrenderModal={this._renderModal.bind(this)}
+                                       />;
       }
       return(
          <div className="team-mate">

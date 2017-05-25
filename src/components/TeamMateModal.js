@@ -7,8 +7,9 @@ class TeamMateModal extends Component {
       const certifications = this._formatCertifications(teamMate.certifications);
 
       return(
-         <div className="modal-shade">
+         <div className="modal-shade" onClick={() => this._unRender()}>
             <div className="modal">
+               <button className="modal--close-button" onClick={() => this._unRender()}>X</button>
                <img alt={this.props.name} src={this.props.image} />
                <h2>{this.props.name}</h2>
                <h3>{this.props.title}</h3>
@@ -86,6 +87,10 @@ class TeamMateModal extends Component {
             );
          });
       }
+   }
+
+   _unRender() {
+      this.props.unrenderModal();
    }
 }
 
