@@ -1,6 +1,18 @@
-.app {
+h1 {
+   font-family: 'Montserrat', sans-serif;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   font-size: 48px;
+   letter-spacing: 5px;
+}
+
+.page {
+   position: fixed;
    width: 100%;
    height: 100%;
+   top: 0px;
+   left: 0px;
+   z-index: 5;
 }
 
 li, li:visited, li:active, li:hover, a, a:visited, a:active, a:hover {

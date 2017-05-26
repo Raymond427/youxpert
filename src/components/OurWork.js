@@ -31,7 +31,7 @@ class OurWork extends Component {
       return projectsJSON.map((project) => {
          return(
             <a href={project.url} target="blank" key={id += 1}>
-               <div className="project" style={{backgroundImage: project.image}}>
+               <div className="project" style={{backgroundImage: `url(${project.image})`}}>
                   <h5>{project.title}</h5>
                   <p>{project.subtitle}</p>
                   <p>{project.description}</p>

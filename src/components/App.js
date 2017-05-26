@@ -19,9 +19,7 @@ class App extends Component {
       return (
          <div className="app">
             <Navbar setCurrentPage={this._setPage.bind(this)}/>
-            <div className="page">
-               {this.state.currentPage}
-            </div>
+            {this.state.currentPage}
             <Footer/>
          </div>
       );
