@@ -1,1 +1,9 @@
+.app {
+   width: 100%;
+   height: 100%;
+}
 
+li, li:visited, li:active, li:hover, a, a:visited, a:active, a:hover {
+   text-decoration: none;
+   color: inherit;
+}
