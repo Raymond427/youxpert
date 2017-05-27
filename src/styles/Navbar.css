@@ -12,6 +12,10 @@
    align-items: center;
 }
 
+.Navbar-logo {
+   cursor: pointer;
+}
+
 .Navbar-wrapper {
    height: inherit;
    display: flex;
@@ -38,4 +42,9 @@
 
 .Navbar-logo {
    height: 50px;
+}
+
+.hamburger-button {
+   height: 50px;
+   width: 50px;
 }

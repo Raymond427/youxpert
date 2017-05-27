@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import ContactUsForm from './ContactUsForm';
+import '../styles/App.css'
+import '../styles/ContactUs.css';
 
 class ContactUs extends Component {
    constructor(){
@@ -8,10 +10,10 @@ class ContactUs extends Component {
    }
    render() {
       return(
-         <div className="contact-us">
+         <div className="contact-us page">
             <div className="call-us">
-               <h2>Call us now</h2>
-               <h2>(980) 349-8479</h2>
+               <h2 className="contact-us--heading">Call us now</h2>
+               <h2 className="contact-us--number">(980) 349-8479</h2>
             </div>
             {this._formState()}
          </div>
@@ -22,10 +24,10 @@ class ContactUs extends Component {
       if (this.state.entries) {
          return(
             <div className="entry-received">
-               <h2>Thank you for your message {this.state.entries.name}!</h2>
-               <h2>We will get back to you shortly</h2>
-               <button onClick={() => this._resetForm()}>
-                  Submit another form
+               <h2 className="contact-us--heading entry-received--header">Thank you for your message {this.state.entries.name}!</h2>
+               <h2 className="contact-us--heading entry-received--header">We will get back to you shortly</h2>
+               <button className="entry-received--button" onClick={() => this._resetForm()}>
+                  Submit Another Form
                </button>
             </div>
          );
@@ -33,7 +35,7 @@ class ContactUs extends Component {
       else {
          return(
             <div className="message-us">
-               <h2>Send us a message</h2>
+               <h2 className="contact-us--heading">Send a message</h2>
                <ContactUsForm addEntry={this._addEntry.bind(this)}/>
             </div>
          );

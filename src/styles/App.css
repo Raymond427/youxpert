@@ -6,6 +6,13 @@ h1 {
    letter-spacing: 5px;
 }
 
+h2 {
+   font-size: 36px;
+   text-transform: uppercase;
+   font-family: 'Montserrat', sans-serif;
+   letter-spacing: 10px;
+}
+
 .page {
    position: fixed;
    width: 100%;
@@ -15,7 +22,8 @@ h1 {
    z-index: 5;
 }
 
-li, li:visited, li:active, li:hover, a, a:visited, a:active, a:hover {
+li, li:visited, li:active, li:hover, a, a:visited, a:active, a:hover, input:focus {
    text-decoration: none;
+   outline: none;
    color: inherit;
 }

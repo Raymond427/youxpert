@@ -1,0 +1,79 @@
+.contact-us {
+   display: flex;
+   flex-direction: row;
+}
+
+.entry-received, .message-us, .call-us {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   width: 50%;
+}
+
+.call-us {
+   background-color: #071F4E;
+   color: #FF6161;
+}
+
+.entry-received, .message-us {
+   background-color: #FF6161;
+   color: #071F4E;
+}
+
+.contact-us--number {
+   font-size: 28px;
+   color: #FFFFFF;
+   letter-spacing: 5px;
+}
+
+.message-us .contact-us--heading {
+   width: 300px;
+}
+
+.contact-us-form {
+   width: 485px;
+}
+
+.contact-us-form input, textarea {
+   width: 96%;
+   margin-bottom: 2%;
+   padding: 10px 5px;
+   border: none;
+}
+
+.contact-us-form input:focus, textarea:focus {
+   text-decoration: none;
+}
+
+.contact-us-form input[type='submit'], .entry-received--button {
+   background-color: #000000;
+   color: #FFFFFF;
+   border: none;
+   cursor: pointer;
+   font-size: 16px;
+   padding: 10px;
+}
+
+.entry-received--header {
+   font-size: 30px;
+   max-width: 500px;
+}
+
+#contact-us-form--textarea {
+   resize: none;
+   height: 150px;
+}
+
+#contact-us-form--name, #contact-us-form--email {
+   width: 46%;
+}
+
+#contact-us-form--name {
+   margin-right: 1%;
+}
+
+#contact-us-form--email {
+   margin-left: 1%;
+}
