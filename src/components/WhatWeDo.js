@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../styles/WhatWeDo.css';
 import analytics from '../images/analytics.png';
 import design from '../images/design.png';
 import development from '../images/development.png';
@@ -13,9 +14,11 @@ class WhatWeDo extends Component {
       const services = this._getServices();
 
       return(
-         <div className="what-we-do">
-            <h1>What we do</h1>
-            {services}
+         <div className="what-we-do page">
+            <h1 className="what-we-do--header">What we do</h1>
+            <div className="services">
+               {services}
+            </div>
          </div>
       );
    }
