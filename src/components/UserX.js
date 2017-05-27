@@ -10,10 +10,12 @@ class UserX extends Component {
       const userx = this._getUserX();
 
       return(
-         <div className="UserX">
-            <h1>What is user experience design?</h1>
-            <h2>Every decision we make when building your product is based on the preferences of your target audience</h2>
-            {userx}
+         <div className="UserX page">
+            <h1 className="UserX--header">What is user experience design?</h1>
+            <h3 className="UserX--subheader">Every decision we make when building your product is based on the preferences of your target audience</h3>
+            <div className="UserX--steps">
+               {userx}
+            </div>
          </div>
       );
    }

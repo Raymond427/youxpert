@@ -1,0 +1,59 @@
+.UserX {
+   background-color: #3D3478;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.ux {
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.overlay {
+   width: 315px;
+   height: 345px;
+   background-color: rgba(7, 31, 78, 0.8);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.overlay h4 {
+   margin: 5px 0;
+   color: #FF6161;
+}
+
+.overlay p {
+   width: 250px;
+   color: #FFFFFF;
+   font-size: 14px;
+   font-style: italic;
+   line-height: 22px;
+}
+
+.UserX--steps {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 985px;
+}
+
+.UserX--header {
+   max-width: 790px;
+   margin: 80px 0 10px 0;
+}
+
+.UserX--subheader {
+   margin-top: 5px;
+   max-width: 590px;
+   color: #FFFFFF;
+   font-weight: lighter;
+   font-style: italic;
+}
+
+.ux:nth-child(2) {
+   margin: 0 2%;
+}

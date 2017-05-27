@@ -20,6 +20,7 @@ h2 {
    top: 0px;
    left: 0px;
    z-index: 5;
+   text-align: center;
 }
 
 li, li:visited, li:active, li:hover, a, a:visited, a:active, a:hover, input:focus {
