@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Skill from './Skill';
 import TeamMate from './TeamMate.js';
+import '../styles/OurTeam.css';
 import cert from '../images/cert.png';
 import graduate from '../images/graduate.png';
 import honor from '../images/honor.png';
@@ -15,8 +16,8 @@ class OurTeam extends Component {
       const teamMates = this._getTeamMates();
 
       return(
-         <div className="our-team">
-            <h1>Our team</h1>
+         <div className="OurTeam page">
+            <h1 className="OurTeam--header">Our team</h1>
             <div className="skills">
                {skills}
             </div>

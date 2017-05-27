@@ -22,7 +22,7 @@ class TeamMate extends Component {
          <div className="team-mate">
             <div className="team-mate-link" onClick={() => this._renderModal()}>
                <img className="team-mate__img" src={this.props.image} alt=""/>
-               <p className="team-mate__name">{this.props.name}</p>
+               <h4 className="team-mate__name">{this.props.name}</h4>
                <p className="team-mate__title">{this.props.title}</p>
             </div>
             {modal}
