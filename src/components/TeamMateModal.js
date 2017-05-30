@@ -12,6 +12,7 @@ import encap from '../images/encapturereality.png';
 import c5 from '../images/carbonfive.png';
 import u2g from '../images/U2G.png';
 import enow from '../images/enow.png';
+import '../styles/TeamMateModal.css';
 
 class TeamMateModal extends Component {
    render(){
@@ -20,14 +21,14 @@ class TeamMateModal extends Component {
       const certifications = this._formatCertifications(teamMate.certifications);
 
       return(
-         <div className="modal-shade" onClick={() => this._unRender()}>
+         <div className="modal-shade">
             <div className="modal">
                <button className="modal--close-button" onClick={() => this._unRender()}>X</button>
-               <img alt={this.props.name} src={this.props.image} />
-               <h2>{this.props.name}</h2>
-               <h3>{this.props.title}</h3>
+               <img className="modal--portrait" alt={this.props.name} src={this.props.image} />
+               <h2 className="modal--name">{this.props.name}</h2>
+               <p className="modal--title">{this.props.title}</p>
+               <p className="modal--experience-header">Experience</p>
                <div className="experiences">
-                  <h3>Experience</h3>
                   {experiences}
                </div>
                <p>{teamMate.description}</p>

@@ -5,11 +5,11 @@ class OurWork extends Component {
       const projects = this._getProjects();
 
       return(
-         <div className="our-work">
+         <div className="OurWork page">
             <h1>Our work</h1>
-            <h2>
+            <p>
                Below are some examples of our latest projects. To request more examples or to request a more detailed case study, please <a href="#" onClick={() => this._renderContactUs()}>contact us</a>
-            </h2>
+            </p>
             <div className="projects">
                {projects}
             </div>
