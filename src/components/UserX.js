@@ -12,7 +12,7 @@ class UserX extends Component {
       return(
          <div className="UserX page">
             <h1 className="UserX--header">What is user experience design?</h1>
-            <h3 className="UserX--subheader">Every decision we make when building your product is based on the preferences of your target audience</h3>
+            <h3 className="subheader">Every decision we make when building your product is based on the preferences of your target audience</h3>
             <div className="UserX--steps">
                {userx}
             </div>

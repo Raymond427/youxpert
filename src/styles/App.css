@@ -32,3 +32,12 @@ li, li:visited, li:active, li:hover, a, a:visited, a:active, a:hover, input:focu
    outline: none;
    color: inherit;
 }
+
+.subheader {
+   margin-top: 5px;
+   max-width: 590px;
+   color: #FFFFFF;
+   font-weight: lighter;
+   font-style: italic;
+   margin: 10px auto;
+}

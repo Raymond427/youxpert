@@ -10,7 +10,7 @@
    background-repeat: no-repeat;
 }
 
-.overlay {
+.ux--overlay {
    width: 315px;
    height: 345px;
    background-color: rgba(7, 31, 78, 0.8);
@@ -20,12 +20,12 @@
    align-items: center;
 }
 
-.overlay h4 {
+.ux--overlay h4 {
    margin: 5px 0;
    color: #FF6161;
 }
 
-.overlay p {
+.ux--overlay p {
    width: 250px;
    color: #FFFFFF;
    font-size: 14px;
