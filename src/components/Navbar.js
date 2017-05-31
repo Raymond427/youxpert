@@ -1,9 +1,20 @@
 import React, { Component } from 'react';
 import logo from '../images/logo.png';
+import MobileNavbar from './MobileNavbar';
 import '../styles/Navbar.css';
 
 class Navbar extends Component {
+   constructor(){
+      super();
+      this.state = { renderMobileNavbar: false };
+   }
+
    render() {
+      let mobileNavbar;
+      if (this.state.renderMobileNavbar) {
+         mobileNavbar = <MobileNavbar changePage={this._changeCurrentMobilePage.bind(this)}/>;
+      }
+
       return (
          <nav className="Navbar">
             <div className="Navbar-wrapper">
@@ -39,14 +50,26 @@ class Navbar extends Component {
                         Contact us
                      </a>
                   </li>
+                  <li>
+                     <button onClick={() => this._toggleMobileNavbar()}>MOBILE MENU</button>
+                  </li>
                </ul>
             </div>
+            {mobileNavbar}
          </nav>
       );
    }
 
    _changeCurrentPage(component) {
       this.props.setCurrentPage(component);
+   }
+
+   _toggleMobileNavbar() {
+      this.setState({ renderMobileNavbar: !this.state.renderMobileNavbar });
+   }
+
+   _changeCurrentMobilePage(component) {
+      this._changeCurrentPage(component);
    }
 }
 
