@@ -19,6 +19,11 @@
 
 .home-wrapper {
    max-width: 900px;
+   visibility: hidden;
+}
+
+.home-wrapper--header {
+   animation: fadeNdrop 0.75s 0.75s ease-out forwards;
 }
 
 .contact-us--button {
@@ -31,6 +36,7 @@
    font-weight: bold;
    color: #FFFFFF;
    cursor: pointer;
+   animation: fadeNrise 0.75s 1s ease-out forwards;
 }
 
 .contact-us--button:focus {

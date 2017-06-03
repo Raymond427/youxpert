@@ -8,7 +8,7 @@ class Home extends Component {
          <div className="Home page" style={{backgroundImage: `url(${homebg})`}}>
             <div className="home-shade">
                <div className="home-wrapper">
-                  <h1>We empower visionaries with compelling user experiences</h1>
+                  <h1 className="home-wrapper--header">We empower visionaries with compelling user experiences</h1>
                   <button className="contact-us--button" onClick={() => this._renderContactUs()}>
                      Contact us
                   </button>
