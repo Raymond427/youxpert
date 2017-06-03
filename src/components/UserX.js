@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import code from '../images/code.png';
 import consulting from '../images/consulting.jpeg';
-import userTesting from '../images/user-testing.jpeg';
+import userTesting from '../images/user-testing.jpg';
 import Ux from './Ux';
 import '../styles/UserX.css';
 

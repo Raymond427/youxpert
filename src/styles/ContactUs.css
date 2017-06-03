@@ -89,6 +89,9 @@
    .entry-received, .message-us, .call-us {
       width: 100%;
    }
+   .entry-received {
+      min-height: 490px;
+   }
 }
 
 @media only screen and (max-width: 375px) {

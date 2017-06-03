@@ -61,3 +61,15 @@
       max-width: 350px;
    }
 }
+
+@media only screen and (max-height: 495px) {
+   .home-wrapper h1 {
+      font-size: 36px;
+   }
+}
+
+@media only screen and (max-height: 360px) {
+   .home-wrapper h1 {
+      font-size: 24px;
+   }
+}
