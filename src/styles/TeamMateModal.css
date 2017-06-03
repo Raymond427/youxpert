@@ -1,9 +1,10 @@
-.modal-shade {
-   position: absolute;
+.modal--shade {
+   position: fixed;
+   z-index: 10;
    top: 0;
    left: 0;
    width: 100%;
-   min-height: 100%;
+   height: 100%;
    background-color: rgba(0, 0, 0, 0.8);
    cursor: auto;
    display: flex;
@@ -27,20 +28,6 @@
    border-radius: 50%;
    margin-right: 20px;
    float: left;
-}
-
-.modal--close-button {
-   position: absolute;
-   background: none;
-   border: none;
-   color: #FFFFFF;
-   font-size: 36px;
-   z-index: 10;
-   top: 90px;
-   right: 20px;
-   cursor: pointer;
-   outline: none;
-   font-family: 'Raleway', sans-serif;
 }
 
 .modal--title, .modal--experience-header, .modal--name {

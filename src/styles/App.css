@@ -23,14 +23,15 @@ p {
    min-height: 100%;
    top: 0;
    left: 0;
-   z-index: 5;
+   z-index: 0;
    text-align: center;
 }
 
-li, li:visited, li:active, li:hover, a, a:visited, a:active, a:hover, input:focus {
+li, li:visited, li:active, li:hover, a, a:visited, a:active, a:hover, input:focus, textarea {
    text-decoration: none;
    outline: none;
    color: inherit;
+   font-family: Arial;
 }
 
 .subheader {
@@ -40,4 +41,17 @@ li, li:visited, li:active, li:hover, a, a:visited, a:active, a:hover, input:focu
    font-weight: lighter;
    font-style: italic;
    margin: 10px auto;
+}
+
+.modal--close-button {
+   position: absolute;
+   background: none;
+   border: none;
+   color: #FFFFFF;
+   font-size: 36px;
+   top: 20px;
+   right: 20px;
+   cursor: pointer;
+   outline: none;
+   font-family: 'Raleway', sans-serif;
 }

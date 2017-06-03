@@ -5,6 +5,7 @@ class MobileNavbar extends Component {
    render(){
       return(
          <nav className="MobileNavbar">
+            <button className="modal--close-button" onClick={() => this._unrenderNavbar()}>X</button>
             <ul className="MobileNavbar-links">
                <li>
                   <a href="#" onClick={() => this._changeCurrentPage("Home")}>
@@ -42,7 +43,12 @@ class MobileNavbar extends Component {
    }
 
    _changeCurrentPage(component){
+      this.props.toggleNavbar();
       this.props.changePage(component);
+   }
+
+   _unrenderNavbar(){
+      this.props.toggleNavbar();
    }
 }
 

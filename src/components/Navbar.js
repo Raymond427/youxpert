@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from '../images/logo.png';
 import MobileNavbar from './MobileNavbar';
 import '../styles/Navbar.css';
+import 'font-awesome/css/font-awesome.css'
 
 class Navbar extends Component {
    constructor(){
@@ -12,7 +13,7 @@ class Navbar extends Component {
    render() {
       let mobileNavbar;
       if (this.state.renderMobileNavbar) {
-         mobileNavbar = <MobileNavbar changePage={this._changeCurrentMobilePage.bind(this)}/>;
+         mobileNavbar = <MobileNavbar changePage={this._changeCurrentMobilePage.bind(this)} toggleNavbar={this._toggleMobileNavbar.bind(this)}/>;
       }
 
       return (
@@ -50,10 +51,10 @@ class Navbar extends Component {
                         Contact us
                      </a>
                   </li>
-                  <li>
-                     <button onClick={() => this._toggleMobileNavbar()}>MOBILE MENU</button>
-                  </li>
                </ul>
+               <button className="mobile-navbar--button" onClick={() => this._toggleMobileNavbar()}>
+                  <i className="fa fa-bars fa-2x" aria-hidden="true"></i>
+               </button>
             </div>
             {mobileNavbar}
          </nav>

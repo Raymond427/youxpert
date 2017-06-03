@@ -1,9 +1,9 @@
 .Navbar {
-   position: fixed;
+   position: absolute;
    width: 100%;
    top: 0;
    left: 0;
-   z-index: 10;
+   z-index: 5;
    height: 65px;
    background-color: rgba(0, 0, 0, 0.8);
    width: 100%;
@@ -29,6 +29,7 @@
 .Navbar-links {
    display: inline-block;
    list-style: none;
+   padding-left: 10px;
 }
 
 .Navbar-links li {
@@ -44,7 +45,37 @@
    height: 50px;
 }
 
-.hamburger-button {
-   height: 50px;
-   width: 50px;
+.mobile-navbar--button {
+   display: none;
+}
+
+@media only screen and (max-width: 888px) {
+   .Navbar {
+      height: 50px;
+   }
+   .Navbar-wrapper {
+      width: 100%;
+   }
+   .Navbar-logo {
+      height: 40px;
+      left: 20px;
+   }
+   .Navbar-links {
+      display: none;
+   }
+
+   .mobile-navbar--button {
+      display: block;
+      background: none;
+      border: none;
+      outline: none;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+   }
+
+   .mobile-navbar--button i {
+      color: #FFFFFF;
+      cursor: pointer;
+   }
 }
