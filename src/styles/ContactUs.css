@@ -33,7 +33,8 @@
 }
 
 .contact-us-form {
-   width: 485px;
+   margin: 0 10px;
+   max-width: 485px;
 }
 
 .contact-us-form input, textarea {
@@ -76,4 +77,27 @@
 
 #contact-us-form--email {
    margin-left: 1%;
+}
+
+@media only screen and (max-width: 1015px) {
+   .contact-us {
+      flex-direction: column;
+   }
+   .call-us {
+      padding-top: 50px;
+   }
+   .entry-received, .message-us, .call-us {
+      width: 100%;
+   }
+}
+
+@media only screen and (max-width: 375px) {
+   #contact-us-form--name, #contact-us-form--email {
+      display: block;
+      width: 96%;
+      margin: 0 auto 2% auto;
+   }
+   #contact-us-form--email {
+      margin-left: 0;
+   }
 }
