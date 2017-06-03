@@ -31,7 +31,7 @@ class TeamMateModal extends Component {
                <div className="experiences">
                   {experiences}
                </div>
-               <p>{teamMate.description}</p>
+               <p className="modal--description">{teamMate.description}</p>
                <div className="certifications">
                   {certifications}
                </div>

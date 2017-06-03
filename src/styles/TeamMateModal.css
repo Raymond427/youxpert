@@ -41,6 +41,7 @@
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
+   justify-content: center;
 }
 
 .experience {
@@ -83,4 +84,33 @@
 .certification-name {
    max-width: 200px;
    margin: 5px 0;
+}
+
+.modal--close-button {
+   top: 70px;
+   cursor: pointer;
+}
+
+@media only screen and (max-width: 850px) {
+   .modal--shade {
+      position: absolute;
+      justify-content: flex-start;
+   }
+   .modal {
+      text-align: center;
+      height: auto;
+      max-height: inherit;
+      margin-top: 150px;
+      min-width: 300px;
+      min-width: 130px;
+   }
+
+   .modal--portrait {
+      float: none;
+   }
+   .experiences {
+      margin: 0 auto;
+      max-width: 300px;
+      min-width: 130px;
+   }
 }
