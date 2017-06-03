@@ -8,6 +8,7 @@
 .ux {
    background-size: cover;
    background-repeat: no-repeat;
+   margin: 20px 10px;
 }
 
 .ux--overlay {
@@ -38,7 +39,6 @@
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: center;
-   width: 985px;
 }
 
 .UserX--header {
@@ -54,6 +54,6 @@
    font-style: italic;
 }
 
-.ux:nth-child(2) {
-   margin: 0 2%;
+@media only screen and (max-width: 450px) {
+
 }
