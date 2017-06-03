@@ -55,3 +55,27 @@ li, li:visited, li:active, li:hover, a, a:visited, a:active, a:hover, input:focu
    outline: none;
    font-family: 'Raleway', sans-serif;
 }
+
+@media only screen and (max-width: 920px) {
+   h1 {
+      font-size: 40px;
+   }
+   h2 {
+      font-size: 30px;
+   }
+   p {
+      font-size: 16px;
+   }
+}
+
+@media only screen and (max-width: 720px) {
+   h1 {
+      font-size: 36px;
+   }
+}
+
+@media only screen and (max-width: 450px) {
+   h1 {
+      font-size: 24px;
+   }
+}
