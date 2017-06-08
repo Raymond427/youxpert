@@ -31,6 +31,7 @@ class TeamMate extends Component {
    }
 
    _renderModal() {
+      window.scrollTo(0, 0);
       this.setState({ modalShowing: !this.state.modalShowing });
    }
 }

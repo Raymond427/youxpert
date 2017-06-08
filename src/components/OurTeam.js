@@ -31,7 +31,7 @@ class OurTeam extends Component {
    _getSkills(){
       const skillsListJSON = [
          { id: 1, name: "Proficient Background", image: graduate, description: ["Systems Engineering", "Computer Science", "Masters of Business Administration"] },
-         { id: 2, name: "Quality Certifications", image: cert, description: ["Six Sigma Green Belts from Life Leaders", "Programming Certifications from MIT and UC Berkley", "P.D.C.A. Problem Solving from Lockheed Martin"] },
+         { id: 2, name: "Quality Certifications", image: cert, description: ["Six Sigma Green Belts from Life Leaders", "Programming Certifications from MIT and UC Berkeley", "P.D.C.A. Problem Solving from Lockheed Martin"] },
          { id: 3, name: "Proven Results", image: honor, description: ["Increases in client customer acquisition", "Increases in client revenue", "99% Overall satisfaction rating from clients"] }
       ];
 
@@ -47,7 +47,7 @@ class OurTeam extends Component {
          { id: 1, image: dreupic, name: "Dreu Dixon", title: "Chief Executive Officer" },
          { id: 2, image: mikepic, name: "Mike Caba", title: "Chief Innovation Officer" },
          { id: 3, image: raypic, name: "Raymond Ferrell", title: "Chief Technology Officer" },
-         { id: 4, image: jonpic, name: "Johnathan Hazeley", title: "Chief Fianancial Officer" }
+         { id: 4, image: jonpic, name: "Johnathan Hazeley", title: "Chief Financial Officer" }
       ];
 
       return teamMateListJSON.map((teamMate) => {
