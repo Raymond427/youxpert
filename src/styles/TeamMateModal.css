@@ -78,7 +78,8 @@
 }
 
 .certification-img {
-   height: 90px;
+   max-height: 90px;
+   max-width: 200px;
 }
 
 .certification-name {
