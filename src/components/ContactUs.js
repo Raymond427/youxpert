@@ -12,8 +12,7 @@ class ContactUs extends Component {
       return(
          <div className="contact-us page">
             <div className="call-us">
-               <h2 className="contact-us--heading">Call us now</h2>
-               <h2 className="contact-us--number">(980) 349-8479</h2>
+               <h2 className="contact-us--heading">We are no longer accepting clients</h2>
             </div>
             {this._formState()}
          </div>
