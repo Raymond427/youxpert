@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import logo from '../images/logo.png';
 import MobileNavbar from './MobileNavbar';
 import '../styles/Navbar.css';
-import 'font-awesome/css/font-awesome.css'
 
 class Navbar extends Component {
    constructor(){
